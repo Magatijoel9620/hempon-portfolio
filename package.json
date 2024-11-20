@@ -1,5 +1,5 @@
 {
-  "name": "hempon-business-solutions",
+  "name": "hempon-portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,8 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.3",
-    "bootstrap": "^5.3.3",
     "ejs": "^3.1.10",
     "express": "^4.21.1"
   }

@@ -5,64 +5,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hempon Business Solutions - Your trusted partner in general-purpose supplies.">
-    <meta name="keywords" content="Supplies, Business, Procurement">
+    <meta name="keywords" content="Business Solutions, Supplies, Logistics, Efficiency">
     <meta name="author" content="Hempon Business Solutions">
-    <title>
-        <%= companyName %>
-    </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Hempon Business Solutions</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <header class="bg-success text-white text-center py-4">
-        <div class="container">
-            <h1 class="display-4">
-                <%= companyName %>
-            </h1>
-            <p class="lead">Your trusted partner in general-purpose supplies.</p>
-        </div>
-    </header>
-    <main class="container my-4">
-        <section id="about" class="mb-5">
-            <h2 class="text-success border-bottom pb-2">About Us</h2>
-            <p>Hempon Business Solutions specializes in delivering top-quality supplies and services across industries.
-                We’re committed to reliability, efficiency, and customer satisfaction.</p>
-        </section>
-        <section id="services" class="mb-5">
-            <h2 class="text-success border-bottom pb-2">Our Services</h2>
-            <ul>
-                <% services.forEach(service=> { %>
-                    <li><strong>
-                            <%= service.title %>
-                        </strong>: <%= service.description %>
-                    </li>
-                    <% }); %>
-            </ul>
-        </section>
-        <section id="contact" class="mb-5">
-            <h2 class="text-success border-bottom pb-2">Contact Us</h2>
-            <form action="/contact" method="POST">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Your Name</label>
-                    <input type="text" id="name" name="name" class="form-control" required>
+    <%- include('partials/header') %>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="intro" class="intro-section">
+                <div class="intro-container">
+                    <div class="intro-image">
+                        <img src="/images/business.png" alt="Hempon Business Solutions">
+                    </div>
+
+                    <div class="intro-text">
+                        <h1>Welcome to Hempon Business Solutions</h1>
+                        <p><strong>Your Trusted Partner in General-Purpose Supplies</strong></p>
+                        <p>
+                            We specialize in delivering high-quality supplies and services across industries. At Hempon
+                            Business
+                            Solutions, we prioritize reliability, efficiency, and customer satisfaction to help your
+                            business thrive.
+                        </p>
+                        <p>
+                            Our commitment to quality, integrity, and
+                            customer satisfaction is evident in every
+                            aspect of our operations.
+                        </p>
+                        <h3>Call Us</h3>
+                        <p>
+                            +254723293449
+
+                        </p>
+                        <p>+25426919578</p>
+                        <!-- Call to Action -->
+                        <div class="contact-buttons">
+                            <a href="#contact" class="contact-button">Contact Us</a>
+                            <a href="#services" class="contact-button">Our Services</a>
+                            <a href="/resume/hempon_profile.pdf" class="contact-button">My Profile</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Your Email</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
+            </section>
+            <div class="section-image">
+                <img src="/images/general.png" alt="Projects Highlight">
+            </div>
+
+            <!-- Our Services Section -->
+            <section id="services" class="intro-section">
+                <h1>Our Services</h1>
+                <div class="intro-container">
+                    <% services.forEach(service=> { %>
+                        <div class="service-item">
+                            <h3>
+                                <%= service.title %>
+                            </h3>
+                            <p>
+                                <%= service.description %>
+                            </p>
+                            <% if (service.list && service.list.length> 0) { %>
+                                <ul class="service-list">
+                                    <% service.list.forEach(item=> { %>
+                                        <li>
+                                            <%= item %>
+                                        </li>
+                                        <% }); %>
+                                </ul>
+                                <% } %>
+                        </div>
+                        <% }); %>
                 </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+            </section>
+
+            <!-- About Us Section -->
+            <section id="about" class="about-section">
+                <div class="about-container">
+                    <h1>About Us</h1>
+                    <p>
+                        Hempon Business Solutions is committed to providing exceptional general-purpose supplies and
+                        logistics services.
+                        Our dedicated team ensures seamless operations and tailored solutions for our clients' unique
+                        needs.
+                    </p>
+                    <ul class="service-list">
+                        <li>GENERAL SUPPLIES COMPANY REGISTERED IN
+                            KENYA AS A SOLE PROPRIETORSHIP.</li>
+                        <li>OFFICES LOCATED IN MOMBASA SERVINg CLIENTS ACROSS KENYA.</li>
+                        <li>
+                            AIMS TO HELP CUSTOMERS COMPETE AND PROSPER WITH COST-EFFECTIVE, RELIABLE, AND TIMELY
+                            SUPPLIES.
+                        </li>
+                    </ul>
+
                 </div>
-                <button type="submit" class="btn btn-success">Send Message</button>
-            </form>
-        </section>
-    </main>
-    <footer class="text-center bg-success text-white py-3">
-        <p>&copy; 2024 Hempon Business Solutions. All Rights Reserved.</p>
-    </footer>
-    <script src="/js/smooth-scroll.js"></script>
+            </section>
+            <div class="section-image">
+                <img src="/images/general2.png" alt="Projects Highlight">
+            </div>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact-section">
+                <div class="contact-container">
+                    <h1>Contact Us</h1>
+                    <form action="/contact" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Hempon Business Solutions. All Rights Reserved.</p>
+            <!-- Optional Footer Links Section -->
+            <div class="footer-links">
+                <a href="#privacy-policy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </footer>
+
+
+        <script src="/js/script.js"></script>
 </body>
 
 </html>

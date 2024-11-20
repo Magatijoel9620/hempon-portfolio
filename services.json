@@ -1,5 +1,41 @@
 [
-    { "title": "Office Supplies", "description": "Top-quality office essentials tailored to your needs." },
-    { "title": "Industrial Equipment", "description": "Reliable equipment for industries of all sizes." },
-    { "title": "Custom Procurement Solutions", "description": "Bespoke procurement services to streamline your operations." }
+    { "title": "Office Supplies", "description": "Top-quality office essentials tailored to your needs.",
+    "list":[
+"Supplies of office toner cartridges",
+"General stationery and printing services",
+"Branding, office equipment, and furniture",
+"Telecommunications equipment and ICT network infrastructure installation, such as cabling and web design services."]
+ },
+ 
+    {
+        "title": "Procurement Services",
+        "description": "We offer comprehensive procurement solutions to help businesses acquire high-quality supplies at competitive prices.",
+        "list": [
+            "Vendor sourcing and management",
+            "Bulk purchasing discounts",
+            "Quality assurance checks",
+            "ICT solutions and accessories",
+            "Hardware and electrical equipment",
+            "Healthcare and hygiene products"
+        ]
+    },
+    {
+        "title": "Logistics Management",
+        "description": "Ensure timely delivery with our efficient logistics and supply chain management services.",
+        "list": [
+            "Real-time shipment tracking",
+            "Route optimization for deliveries",
+            "Customs clearance assistance"
+        ]
+    },
+    {
+        "title": "Inventory Management Solutions",
+        "description": "Streamline your inventory processes with our modern inventory management systems.",
+        "list": [
+            "Barcode and QR code integration",
+            "Automated stock level monitoring",
+            "Inventory forecasting"
+        ]
+    }
 ]
+

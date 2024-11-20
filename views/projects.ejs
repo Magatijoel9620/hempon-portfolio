@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <%- include('partials/header') %>
+        <main>
+            <!-- Projects Section -->
+            <section id="projects" class="projects-section">
+                <h1>My Projects</h1>
+                <% projects.forEach(project=> { %>
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <!-- Fixed img tag -->
+                            <img src="/images/team.jpg<%= project.image %>" alt="<%= project.name %>"
+                                class="project-image">
+                            <div class="project-details">
+                                <h3>
+                                    <%= project.name %>
+                                </h3>
+                                <p>
+                                    <%= project.description %>
+                                </p>
+                                <p><strong>Technologies:</strong>
+                                    <%= project.technologies.join(', ') %></p>
+                                <div class="project-links">
+                                    <a href="<%= project.url %>" target="_blank" class="btn">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <% }); %>
+            </section>
+            <div class="section-image">
+                <img src="/images/chair.png" alt="Projects Highlight">
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Hempon Business Solutions. All Rights Reserved.</p>
+            <!-- Optional Footer Links Section -->
+            <div class="footer-links">
+                <a href="#privacy-policy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </footer>
+        
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
