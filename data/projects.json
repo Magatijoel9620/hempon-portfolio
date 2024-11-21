@@ -1,20 +1,32 @@
 [
   {
+    "title": "Funiture Supply Management ",
+    "description": "Supplied furnitures, (Desks, chairs and Drawers) to Mombasa High court. Customized Drawers were designed to fit in various offices at the law courts.",
+    "technologies": ["Carpentry ", "Design"],
+    "link": "https://judiciary.go.ke/"
+  },
+  {
+    "title": "General Supply Management ",
+    "description": "Supplied various utilities to Pwani University (Stationeries, Toiletries, Food & cooking products.",
+    "technologies": ["none ", "none", "none"],
+    "link": "https://www.pu.ac.ke/"
+  },
+  {
     "title": "Warehouse Management System",
     "description": "Developed a custom warehouse management system (WMS) to streamline the organization of inventory. This system optimized stock tracking, order fulfillment, and stock replenishment, resulting in a 20% increase in operational efficiency.",
     "technologies": ["JavaScript", "Node.js", "MySQL", "React"],
-    "link": "https://hemponbusinesssolutions.com"
+    "link": "https://hempongroup.co.ke/"
   },
   {
     "title": "Supply Chain Optimization Project",
     "description": "Launched a project to optimize supply chain routes and reduce delivery times by analyzing historical data and identifying inefficiencies. This led to a 15% reduction in transportation costs and improved delivery times by 10%.",
     "technologies": ["Python", "Pandas", "Google Maps API"],
-    "link": "https://hemponbusinesssolutions.com/supply-chain-optimization"
+    "link": "https://hempongroup.co.ke/"
   },
   {
     "title": "Client Portal for Order Management",
     "description": "Developed an online portal for clients to place and track their orders. The portal allows clients to view real-time order status, manage inventory, and streamline order requests, reducing errors and improving client satisfaction.",
     "technologies": ["PHP", "Laravel", "JavaScript", "CSS"],
-    "link": "https://hemponbusinesssolutions.com/client-portal"
+    "link": "https://hempongroup.co.ke/"
   }
 ]

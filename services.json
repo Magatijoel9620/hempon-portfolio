@@ -1,5 +1,6 @@
 [
-    { "title": "Office Supplies", "description": "Top-quality office essentials tailored to your needs.",
+    { "title": "Office Supplies",
+     "description": "Top-quality office essentials tailored to your needs.",
     "list":[
 "Supplies of office toner cartridges",
 "General stationery and printing services",
@@ -8,7 +9,7 @@
  },
  
     {
-        "title": "Procurement Services",
+        "title": "Procurement & ICT Services",
         "description": "We offer comprehensive procurement solutions to help businesses acquire high-quality supplies at competitive prices.",
         "list": [
             "Vendor sourcing and management",

@@ -7,9 +7,11 @@ const services = require("./services.json"); // Dynamic services data
 const app = express();
 const PORT = 3000;
 
+app.set("trust proxy", 1);  // Enable Heroku or other cloud providers' reverse proxy
 // Middleware
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({ extended: true }));
+
 
 // Import JSON data for dynamic content
 const experienceData = require("./data/experience.json");

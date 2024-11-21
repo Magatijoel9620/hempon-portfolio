@@ -1,20 +1,26 @@
 [
   {
       "role": "Procurement Specialist",
-      "company": "Global Supplies Co.",
+      "company": "Hempon Supplies Co.",
       "duration": "Jan 2019 - Dec 2021",
       "description": "Managed procurement operations and supplier relationships to ensure cost-effective purchasing."
   },
   {
       "role": "Logistics Coordinator",
-      "company": "Efficient Logistics Ltd.",
+      "company": "Hempon Logistics Ltd.",
       "duration": "Feb 2017 - Dec 2018",
       "description": "Coordinated shipping schedules and optimized delivery routes to reduce delays."
   },
   {
       "role": "Inventory Manager",
-      "company": "Warehouse Solutions Inc.",
+      "company": "Hempon Solutions Inc.",
       "duration": "Mar 2015 - Jan 2017",
       "description": "Implemented inventory management systems, reducing stock discrepancies by 25%."
-  }
+  },
+  {
+    "role": "IT Manager",
+    "company": "Kanyi J & Company Advocates.",
+    "duration": "September 2017 - Jan 2024",
+    "description": "Implemented File management systems, reducing filing discrepancies by 25% and increasing file updates by 60%"
+}
 ]
